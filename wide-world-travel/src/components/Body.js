@@ -1,13 +1,14 @@
 import React from 'react';
-import prettyPicture from './images/image.webp'
+import './bodyimage.css';
 
-function Body(props){
-    return (
-        <body class="App-header">
-        <img src={logo} className="bodyImage" alt="logo"/>
-        <li class="header-title">{props.title}</li>
-        </body>
-    )
+
+let PrettyPic = (props) => {
+    return(
+        <div className="pretty-pic">
+            <img src={props.pic} alt="Responsive" />
+        </div>
+    );
 }
 
-export default Body;
+
+export default PrettyPic;
